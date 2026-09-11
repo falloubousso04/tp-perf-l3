@@ -1,0 +1,20 @@
+    93.29%     0.00%  libc.so.6             [.] __libc_start_main
+    93.29%     0.00%  libc.so.6             [.] 0x00007f5f89c2a1ca
+    93.29%     0.00%  libnode.so.109        [.] node::LoadSnapshotDataAndRun(node::SnapshotData const**, node::InitializationResult const*)
+    93.29%     0.00%  libnode.so.109        [.] node::NodeMainInstance::Run()
+    93.29%     0.00%  libnode.so.109        [.] node::NodeMainInstance::Run(int*, node::Environment*)
+    93.29%     0.00%  libnode.so.109        [.] node::SpinEventLoop(node::Environment*)
+    93.29%     0.00%  libnode.so.109        [.] node::Start(int, char**)
+    93.29%     0.00%  libuv.so.1.0.0        [.] uv_run
+    93.29%     0.00%  node                  [.] _start
+    93.27%     0.00%  libuv.so.1.0.0        [.] 0x00007f5f8ce6fbdb
+    93.26%     0.00%  libuv.so.1.0.0        [.] 0x00007f5f8ce6a028
+    93.25%     0.00%  libuv.so.1.0.0        [.] 0x00007f5f8ce69cab
+    93.25%     0.00%  libnode.so.109        [.] 0x00007f5f8ab12af1
+    93.24%     0.01%  libnode.so.109        [.] node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*)
+    93.17%     0.00%  libnode.so.109        [.] v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+    93.16%     0.01%  libnode.so.109        [.] v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*)
+    93.13%     0.00%  libnode.so.109        [.] 0x00007f5f8ac7e583
+    93.13%     0.00%  libnode.so.109        [.] 0x00007f5f8ac7e85c
+    93.13%     0.00%  libnode.so.109        [.] 0x00007f5f8af3a8a1
+    92.80%     0.00%  libnode.so.109        [.] llhttp__internal_execute

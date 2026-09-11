@@ -1,7 +1,12 @@
 node_modules/
 commandes.log
-*.csv
-*.tsv
-resultats*
-gnuplot*
 /tmp/
+*.data
+*.perf
+*.folded
+FlameGraph/
+
+# Notes personnelles de preparation orale (pas destinees au rendu)
+EXPLICATIONS.md
+EXPLICATIONS.pdf
+explications_style.css

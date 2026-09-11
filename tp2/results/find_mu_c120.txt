@@ -1,0 +1,12 @@
+Failed requests:        180
+Requests per second:    27.66 [#/sec] (mean)
+Time per request:       4338.315 [ms] (mean)
+Time per request:       36.153 [ms] (mean, across all concurrent requests)
+Failed requests:        166
+Requests per second:    27.76 [#/sec] (mean)
+Time per request:       4323.156 [ms] (mean)
+Time per request:       36.026 [ms] (mean, across all concurrent requests)
+Failed requests:        166
+Requests per second:    27.74 [#/sec] (mean)
+Time per request:       4325.844 [ms] (mean)
+Time per request:       36.049 [ms] (mean, across all concurrent requests)

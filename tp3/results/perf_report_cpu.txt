@@ -1,0 +1,60 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+# comm: node
+#
+# Total Lost Samples: 0
+#
+# Samples: 22K of event 'cycles:P'
+# Event count (approx.): 17306699737
+#
+# Children      Self  Shared Object         Symbol                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+# ........  ........  ....................  .................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+#
+    93.29%     0.00%  node                  [.] _start
+            |
+            ---_start
+               __libc_start_main
+               0x7f5f89c2a1ca
+               node::Start(int, char**)
+               node::LoadSnapshotDataAndRun(node::SnapshotData const**, node::InitializationResult const*)
+               node::NodeMainInstance::Run()
+               node::NodeMainInstance::Run(int*, node::Environment*)
+               node::SpinEventLoop(node::Environment*)
+               uv_run
+               |          
+                --93.27%--0x7f5f8ce6fbdb
+                          |          
+                           --93.26%--0x7f5f8ce6a028
+                                     |          
+                                      --93.25%--0x7f5f8ce69cab
+                                                |          
+                                                 --93.25%--0x7f5f8ab12af1
+                                                           |          
+                                                            --93.24%--node::LibuvStreamWrap::OnUvRead(long, uv_buf_t const*)
+                                                                      |          
+                                                                       --92.80%--0x7f5f8aa2cc8f
+                                                                                 0x7f5f8aa2b2de
+                                                                                 llhttp__internal_execute
+                                                                                 |          
+                                                                                  --92.66%--0x7f5f8addb7a2
+                                                                                            |          
+                                                                                             --92.65%--0x7f5f8aa2c275
+                                                                                                       v8::Function::Call(v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*)
+                                                                                                       v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>, int, v8::internal::Handle<v8::internal::Object>*)
+                                                                                                       0x7f5f8af3a8a1
+                                                                                                       0x7f5f8ac7e583
+                                                                                                       0x7f5f8ac7e85c
+                                                                                                       |          
+                                                                                                        --92.64%--Function:^parserOnHeadersComplete node:_http_common:72
+                                                                                                                  |          
+                                                                                                                   --92.61%--Function:^parserOnIncoming node:_http_server:1027
+                                                                                                                             |          
+                                                                                                                              --92.54%--Function:^emit node:events:464
+                                                                                                                                        |          
+                                                                                                                                         --92.52%--Function:^ /home/tpuser/tp-perf-l3/server.js:56
+                                                                                                                                                   |          
+                                                                                                                                                    --91.96%--LazyCompile:*traiterCommande /home/tpuser/tp-perf-l3/server.js:28
+
+    93.29%     0.00%  libc.so.6             [.] __libc_start_main
+            |
+            ---__libc_start_main
